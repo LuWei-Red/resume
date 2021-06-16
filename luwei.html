@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>卢伟</title>
+		<link rel="stylesheet"  href="//at.alicdn.com/t/font_2482190_na72vj80jy.css"/>
+		<link rel="stylesheet" type="text/css" href="css/lw1.css"/>
+		<script src="js/jquery-3.4.1.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				//qq移入出现二维码
+				$(".p1").mousemove(function(){
+					$(".qq1").css("display","block");				
+				})
+				$(".qq1").mousemove(function(){
+					$(".qq1").css("display","block");
+				})
+				//qq移出二维码消失
+				$(".p1").mouseleave(function(){
+					$(".qq1").css("display","none");
+				})
+				//vx移入出现二维码
+				$(".p2").mousemove(function(){
+					$(".vx1").css("display","block");				
+				})
+				$(".vx1").mousemove(function(){
+					$(".vx1").css("display","block");
+				})
+				//vx移出二维码消失
+				$(".p2").mouseleave(function(){
+					$(".vx1").css("display","none");
+				})
+				//底部qq移入出现二维码
+				$(".p3").mousemove(function(){
+					$(".qq2").css("display","block");				
+				})
+				$(".qq2").mousemove(function(){
+					$(".qq2").css("display","block");
+				})
+				//底部qq移出二维码消失
+				$(".p3").mouseleave(function(){
+					$(".qq2").css("display","none");
+				})
+				//底部vx移入出现二维码
+				$(".p4").mousemove(function(){
+					$(".vx2").css("display","block");				
+				})
+				$(".vx2").mousemove(function(){
+					$(".vx2").css("display","block");
+				})
+				//vx移出二维码消失
+				$(".p4").mouseleave(function(){
+					$(".vx2").css("display","none");
+				})
+				//悬浮点击
+				$(".box6-top li:nth-child(1)").mousedown(function(){
+					var scroll_offset = $("#b1").offset().top;
+					$("body,html").animate({
+						scrollTop: scroll_offset 
+					},500)		
+				})
+				$(".box6-top li:nth-child(2)").mousedown(function(){
+					var scroll_offset = ($("#b2").offset().top);
+					$("body,html").animate({
+						scrollTop: scroll_offset 
+					},500)		
+				})
+				$(".box6-top li:nth-child(3)").mousedown(function(){
+					var scroll_offset = $("#b3").offset().top;
+					$("body,html").animate({
+						scrollTop: scroll_offset 
+					},500)		
+				})
+				$(".box6-top li:nth-child(4)").mousedown(function(){
+					var scroll_offset = ($("#b4").offset().top)-80;
+					$("body,html").animate({
+						scrollTop: scroll_offset 
+					},500)		
+				})
+				$(".box6-top li:nth-child(5)").mousedown(function(){
+					var scroll_offset = $("#b5").offset().top;
+					$("body,html").animate({
+						scrollTop: scroll_offset 
+					},500)		
+				})
+				
+				//顶部悬浮
+				var t1=setInterval(function(){
+					if($(window).scrollTop()>=70){
+						$(".box6").css("top","0");					
+						$(".box6-top li").css("color","black");
+						if($(window).scrollTop()>=70 && $(window).scrollTop()<530){
+						$(".box6-top li:nth-child(1)").css("color","#ffbc04");	
+						}		
+						if($(window).scrollTop()>=530 && $(window).scrollTop()<1430){
+							$(".box6-top li:nth-child(2)").css("color","#ffbc04");
+							$(".box2-left").css("left","0");
+							$(".box2-right").css("right","10%");
+						}
+						if($(window).scrollTop()>=1400 && $(window).scrollTop()<2380){
+							$(".box6-top li:nth-child(3)").css("color","#ffbc04");
+							$(".box3-left").css("left","0");
+							$(".box3-right").css("right","0");
+						}
+						if($(window).scrollTop()>=2380 && $(window).scrollTop()<3000){
+							$(".box6-top li:nth-child(4)").css("color","#ffbc04");
+							$(".box4-left").css("left","0");
+							$(".box4-right").css("right","0");
+						}
+						if($(window).scrollTop()>=3000 && $(window).scrollTop()<3300){
+							$(".box6-top li:nth-child(5)").css("color","#ffbc04");
+						}
+					}else{
+						$(".box6").css("top","-70px");
+					}			
+				},100)
+				
+				//移动端菜单
+				$(".box1-caidan p:first-child").mousedown(function(){
+					$(".box1-cd").css("right","0");
+					$(".box1-caidan p:first-child").css("display","none");
+					$(".box1-caidan p:last-child").css("display","block");
+				})
+				$(".box1-caidan p:last-child").mousedown(function(){
+					$(".box1-cd").css("right","-1000px");
+					$(".box1-caidan p:last-child").css("display","none");
+					$(".box1-caidan p:first-child").css("display","block");
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<!--网页首页-->
+		<div class="box1" id="b1">
+			<div class="box1-top">
+				<h2>LU WEI</h2>
+				<ul>
+					<li>网站首页</li>
+					<li>个人简历</li>
+					<li>求学和工作</li>
+					<li>专业技能</li>					
+					<li>联系我</li>
+				</ul>
+			</div>
+			<hr />
+			<div class="box1-con">						
+				<p></p>					
+				<h1>LU WEI</h1>
+				<h3>一个稚嫩但又充满激情的html设计师，目前居住在中国</h3>
+			</div>
+			<!--移动端菜单-->
+			<div class="box1-caidan">
+				<p class="iconfont icon-caidan"></p>
+				<p class="iconfont icon-chacha"></p>
+			</div>
+			<ul class="box1-cd">
+				<li>网站首页</li>
+				<li>个人简历</li>
+				<li>求学和工作</li>
+				<li>专业技能</li>					
+				<li>联系我</li>
+			</ul>
+		</div>
+		<!--个人简历-->
+		<div class="box2" id="b2">	
+			<h2 class="jj1">我的简介</h2>
+			<p class="jj2">我的基本信息和一些自我介绍</p>		
+			<div class="box2-con">
+				<!--照片-->
+				<div class="box2-left">
+					<img src="img/box2.jpg" />
+				</div>
+				<div class="box2-right">
+					<h2>基本信息和自我介绍</h2>
+					<p>我是一名<span>html</span>设计师，目前居住在<span>中国</span></p>
+					<h3>主修课程：JAVA程序设计、软件工程、数据库原理及应用、动态Web设计、 HTML5高级开发、JAVA高级开发、软件测试技术、Android项目开发、信息安全技术、C语言、计算机组装与维护、PS、Word、离散数学、软件文档写作、数据结构、Ps</h3>
+					<ul>
+						<li>
+							<h4>出生日期：</h4>
+							<span>1999/9/18</span>
+							<hr />
+						</li>
+						<li>
+							<h4>英文名：</h4>
+							<span>LU WEI</span>
+							<hr />
+						</li>
+						<li>
+							<h4>民族：</h4>
+							<span>汉族</span>
+							<hr />
+						</li>
+						<li>
+							<h4>手机号：</h4>
+							<span>19142031241</span>
+							<hr />
+						</li>
+						<li>
+							<h4>毕业院校：</h4>
+							<span>桂林电子科技大学</span>
+							<hr />
+						</li>
+						<li>
+							<h4>邮箱：</h4>
+							<span>1440642650@qq.com</span>
+							<hr />
+						</li>
+						<li>
+							<h4>籍贯：</h4>
+							<span>广西桂林</span>
+							<hr />
+						</li>
+						<li>
+							<h4>现居城市：</h4>
+							<span>广西南宁</span>
+							<hr />
+						</li>
+						<li class="p1">
+							<p>
+								<img class="qq1" src="img/qq.png" />
+							</p>					
+						</li>
+						<li class="p2">
+							<p>
+								<img class="vx1" src="img/vx.jpg" />
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--求学经历-->
+		<div class="box3" id="b3">
+			<div class="box3-top">
+				<h2>求学和工作经历</h2>				
+			</div>
+			<div class="box3-con">
+				<div class="box3-left">
+					<h2>求学经历</h2>
+					<ul>
+						<li>
+							<span>2018</span>
+							<div class="qiu">
+								<div class="line2"></div>
+							</div>						
+							<div class="ka">
+								<h3>HTML</h3>
+								<p>桂林电子科技大学</p>
+								<h4>主修课程：<br/>JAVA程序设计、软件工程、数据库原理及应用、动态Web设计、 HTML5高级开发、JAVA高级开发、软件测试技术、Android项目开发、信息安全技术、C语言、计算机组装与维护、PS、Word、离散数学、软件文档写作、数据结构、Ps</h4>								
+							</div>							
+						</li>
+						<div class="line1"></div>
+						<li>
+							<span>2020</span>
+							<div class="qiu">
+								<div class="line2"></div>
+							</div>					
+							<div class="ka">
+								<h3>全栈开发</h3>
+								<p>深蓝软件</p>
+								<h4>HTML5前端开发：<br/>熟练对Hbuilder、Dreamweaver开发工具的运用,精通DIV与CSS的样式布局与编写，能够根据UI设计图完整制作PC端和移动端的UI界面,熟练javaScript、CSS3、HTML5，并且能熟练视同JQuery框架实现对网页的编写</h4>
+							</div>							
+						</li>					
+					</ul>
+				</div>
+				<div class="box3-right">
+					<h2>工作经历</h2>
+					<ul>
+						<li>
+							<span>2020</span>
+							<div class="qiu">
+								<div class="line2"></div>
+							</div>							
+							<div class="ka">
+								<h3>安世半导体</h3>
+								<p>技术培训生</p>
+								<h4>指令</h4>						
+							</div>							
+						</li>
+						<div class="line1"></div>
+						<li>
+							<span>2020</span>
+							<div class="qiu">
+								<div class="line2"></div>
+							</div>							
+							<div class="ka">
+								<h3>深蓝软件</h3>
+								<p>全栈培训生</p>
+								<h4>负责公司团队接手的项目设计与开发；<br/>
+									按照公司所培训的内容完成公司项目；<br/>
+									参与项目分工与编写分析；</h4>		<br/>						
+							</div>							
+						</li>						
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--专业技能-->
+		<div class="box4" id="b4">			
+			<div class="box4-con">				
+				<div class="box4-left">
+					<h2>专业技能</h2>
+					<h4>在校期间曾系统的学习过html,能熟练运用DIV+CSS. HTML ,可以独立完成网站前台页面设计。</h4>
+					<h3>HTML</h3>
+					<span>95%</span>
+					<div class="jindu1">
+						<p></p>
+					</div>
+					<h3>JAVA</h3>
+					<span>15%</span>
+					<div class="jindu2">
+						<p></p>
+					</div>
+					<h3>PHOTOSHOP</h3>
+					<span>15%</span>
+					<div class="jindu3">
+						<p></p>
+					</div>
+					<h3>CSS</h3>
+					<span>90%</span>
+					<div class="jindu4">
+						<p></p>
+					</div>
+					<h3>JQUERY</h3>
+					<span>50%</span>
+					<div class="jindu5">
+						<p></p>
+					</div>
+				</div>
+				<div class="box4-right">
+					<img src="img/1.webp" />
+				</div>
+			</div>			
+		</div>
+		<!--联系我-->
+		<div class="box5" id="b5">
+			<div class="box5-con">
+				<h4>Contact me!</h4>
+				<h2>联系我吧</h2>
+				<p>电话：19142031241</p>
+				<p>邮箱：1440642650@qq.com</p>
+				<ul class="myul">
+					<li class="p3">
+						<i>
+							<img class="qq2" src="img/qq.png" />
+						</i>
+					</li>
+					<li class="p4">
+						<i>
+							<img class="vx2" src="img/vx.jpg" />
+						</i>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--顶部悬浮-->
+		<div class="box6">
+			<div class="box6-top">
+				<h2>LU WEI</h2>
+				<ul>
+					<li>网站首页</li>
+					<li>个人简历</li>
+					<li>求学和工作</li>
+					<li>专业技能</li>					
+					<li>联系我</li>
+				</ul>
+			</div>
+		</div>
+		
+	</body>
+</html>
