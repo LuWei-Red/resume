@@ -59,7 +59,7 @@
 					$("body,html").animate({
 						scrollTop: scroll_offset 
 					},500)		
-				})
+				})			
 				$(".box6-top li:nth-child(2)").mousedown(function(){
 					var scroll_offset = ($("#b2").offset().top);
 					$("body,html").animate({
@@ -85,37 +85,44 @@
 					},500)		
 				})
 				
+				
 				//顶部悬浮
 				var t1=setInterval(function(){
 					if($(window).scrollTop()>=70){
 						$(".box6").css("top","0");					
 						$(".box6-top li").css("color","black");
-						if($(window).scrollTop()>=70 && $(window).scrollTop()<530){
+						if($(window).scrollTop()>=$("#b1").offset().top){
+						$(".box6-top li").css("color","black");
 						$(".box6-top li:nth-child(1)").css("color","#ffbc04");	
+						
 						}		
-						if($(window).scrollTop()>=530 && $(window).scrollTop()<1430){
+						if($(window).scrollTop()>=$("#b2").offset().top){
+							$(".box6-top li").css("color","black");
 							$(".box6-top li:nth-child(2)").css("color","#ffbc04");
 							$(".box2-left").css("left","0");
 							$(".box2-right").css("right","10%");
 						}
-						if($(window).scrollTop()>=1400 && $(window).scrollTop()<2380){
+						if($(window).scrollTop()>=$("#b3").offset().top){
+							$(".box6-top li").css("color","black");
 							$(".box6-top li:nth-child(3)").css("color","#ffbc04");
 							$(".box3-left").css("left","0");
 							$(".box3-right").css("right","0");
 						}
-						if($(window).scrollTop()>=2380 && $(window).scrollTop()<3000){
+						if($(window).scrollTop()>=$("#b4").offset().top){						
+							$(".box6-top li").css("color","black");
 							$(".box6-top li:nth-child(4)").css("color","#ffbc04");
 							$(".box4-left").css("left","0");
 							$(".box4-right").css("right","0");
 						}
-						if($(window).scrollTop()>=3000 && $(window).scrollTop()<3300){
+						if($(window).scrollTop()>=$("#b5").offset().top){
+							$(".box6-top li").css("color","black");
 							$(".box6-top li:nth-child(5)").css("color","#ffbc04");
 						}
 					}else{
 						$(".box6").css("top","-70px");
 					}			
 				},100)
-				
+
 				//移动端菜单
 				$(".box1-caidan p:first-child").mousedown(function(){
 					$(".box1-cd").css("right","0");
@@ -123,6 +130,53 @@
 					$(".box1-caidan p:last-child").css("display","block");
 				})
 				$(".box1-caidan p:last-child").mousedown(function(){
+					$(".box1-cd").css("right","-1000px");
+					$(".box1-caidan p:last-child").css("display","none");
+					$(".box1-caidan p:first-child").css("display","block");
+				})
+				
+				//移动端点击
+				$(".box1-cd li:nth-child(1)").mousedown(function(){
+					var scroll_offset = $("#b1").offset().top;
+					$("body,html").animate({
+						scrollTop: scroll_offset 
+					},500)
+					$(".box1-cd").css("right","-1000px");
+					$(".box1-caidan p:last-child").css("display","none");
+					$(".box1-caidan p:first-child").css("display","block");
+				})
+				$(".box1-cd li:nth-child(2)").mousedown(function(){
+					var scroll_offset = $("#b2").offset().top;
+					$("body,html").animate({
+						scrollTop: scroll_offset 
+					},500)	
+					$(".box1-cd").css("right","-1000px");
+					$(".box1-caidan p:last-child").css("display","none");
+					$(".box1-caidan p:first-child").css("display","block");
+				})
+				$(".box1-cd li:nth-child(3)").mousedown(function(){
+					var scroll_offset = $("#b3").offset().top;
+					$("body,html").animate({
+						scrollTop: scroll_offset 
+					},500)	
+					$(".box1-cd").css("right","-1000px");
+					$(".box1-caidan p:last-child").css("display","none");
+					$(".box1-caidan p:first-child").css("display","block");
+				})
+				$(".box1-cd li:nth-child(4)").mousedown(function(){
+					var scroll_offset = $("#b4").offset().top;
+					$("body,html").animate({
+						scrollTop: scroll_offset 
+					},500)	
+					$(".box1-cd").css("right","-1000px");
+					$(".box1-caidan p:last-child").css("display","none");
+					$(".box1-caidan p:first-child").css("display","block");
+				})
+				$(".box1-cd li:nth-child(5)").mousedown(function(){
+					var scroll_offset = $("#b5").offset().top;
+					$("body,html").animate({
+						scrollTop: scroll_offset 
+					},500)
 					$(".box1-cd").css("right","-1000px");
 					$(".box1-caidan p:last-child").css("display","none");
 					$(".box1-caidan p:first-child").css("display","block");
@@ -275,7 +329,7 @@
 							<div class="ka">
 								<h3>安世半导体</h3>
 								<p>技术培训生</p>
-								<h4>指令</h4>						
+								<h4>通过指令操控机器</h4>						
 							</div>							
 						</li>
 						<div class="line1"></div>
@@ -289,7 +343,10 @@
 								<p>全栈培训生</p>
 								<h4>负责公司团队接手的项目设计与开发；<br/>
 									按照公司所培训的内容完成公司项目；<br/>
-									参与项目分工与编写分析；</h4>		<br/>						
+									参与项目分工与编写分析；			<br/>
+									前端学习html、css、js、jq；vue、fullpage、layui等框架	<br/>
+									后端学习java、jdbc、mysql； spring、springmvc、mybatis等框架<br/>
+								</h4>		<br/>						
 							</div>							
 						</li>						
 					</ul>

@@ -289,7 +289,7 @@ ul{
 	overflow: hidden
 }
 .box4-con{
-	margin: 150px auto 120px;
+	margin: 60px auto 120px;
 	width: 90%;
 	height: 500px;
 }
@@ -407,7 +407,7 @@ ul{
 	width: 100px;	
 	padding: 10px;
 	background-color: white;
-	border: 1px solid #ccc;
+	border: 1px solid #ccc;	
 	display: none;
 }
 .myul li:last-child{
@@ -497,5 +497,83 @@ ul{
 	}
 	.box1-cd li:last-child{
 		border-bottom: 1px solid white;
+	}
+	.jj1 {
+    	margin: 45px 0px 20px 50px;
+    }
+    .jj2 {
+    	margin: 0px 0px 25px 50px;
+    }
+    .qq1,.vx1{ 
+    	top: -145px;
+    }
+    .box2 {
+    	padding-bottom: 15px;
+    }
+	.box2-left{
+		display: none;
+	}
+	.box2-right{
+		width: 90%;
+		left: 50px;
+	}	
+	.box3{
+		height: 1550px;
+	}
+	.box3-top {
+	    margin-top: 30px;
+	}
+	.box3-top h2 { 
+	    margin-bottom: 30px;
+	}
+	.box3-left, .box3-right {
+	    position: absolute;
+	    width: 100%;	   
+	    float: none;
+	}
+	.box3-right {
+		top: 690px;
+	}
+	.box3-left h2, .box3-right h2 {
+	    width: 140px;
+	    font-size: 30px;
+	    font-weight: normal;
+    }
+    .ka h4 {
+    	width: 400px;
+    }
+    .box4-right{
+    	display: none;
+    }
+    .box4-con {
+   	 	margin: 35px auto 120px;
+   	 	width: 90%;
+    	height: 407px;
+    }
+    .box4-left {   
+   		 width: 100%;
+   	}
+    .box5 {
+    	height: 280px;
+    }
+    body{
+    	height: 3980px;
+    }
+    .box5-con {
+   	 	margin: 30px auto 0px;
+    }
+    .box5-con h2 {	  
+	    margin-bottom: 15px;
+	}
+	.myul {  
+    	top: 160px;
+    }
+    .qq2 {	    
+	    top: -47px;
+	    left: -127px;	    
+	}
+	.vx2{
+		 top: -47px;
+	    left: 43px;	 
 	}
 }
