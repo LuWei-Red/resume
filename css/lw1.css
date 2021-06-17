@@ -560,7 +560,7 @@ ul{
     	height: 280px;
     }
     body{
-    	height: 3550px;
+    	height: 3980px;
     }
     .box5-con {
    	 	margin: 30px auto 0px;
@@ -581,6 +581,9 @@ ul{
 	}
 }
 @media  screen  and (max-width: 400px) {
+	body{
+		height: 3390px;
+	}	
 	.box1-con h1 {
 	    margin-left: -190px;
 	}
@@ -604,7 +607,7 @@ ul{
 	    left: -16px;
 	}
 	.qiu {
-	    top: 3px;
+	    top: -18px;
 	    left: -110px;
 	    float: none; 
 	}
@@ -612,11 +615,11 @@ ul{
 	  display: none;	  	  
 	}
 	.ka{
-		margin: 10px 0px 0px 20px;
+		margin: -12px 0px 0px 20px;
 	}
 	.ka h4 {
 	    width: 220px;
-	    font-size: 15px;
+	    font-size: 12px;
 	}
 	.box2 {
 	    padding-bottom: 45px;
@@ -624,4 +627,13 @@ ul{
 	.box2-right li span {
 		display: block;
 	}
-}
+	.box3 {
+	    height: 1360px;
+	}
+	.box3-left span, .box3-right span {	    
+	    margin: 15px 45px 0px;
+	}
+	.box3-right li:first-child {
+		height: 145px;
+	}
+}	

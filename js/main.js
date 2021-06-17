@@ -98,7 +98,7 @@ $(function(){
 							$(".box3-left").css("left","0");
 							$(".box3-right").css("right","0");
 						}
-						if($(window).scrollTop()>=$("#b4").offset().top){						
+						if($(window).scrollTop()>=($("#b4").offset().top)-105){						
 							$(".box6-top li").css("color","black");
 							$(".box6-top li:nth-child(4)").css("color","#ffbc04");
 							$(".box4-left").css("left","0");
