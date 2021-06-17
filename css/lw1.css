@@ -127,6 +127,9 @@ ul{
 	height: 45px;
 	float: left;
 }
+.box2-right li:last-child {
+    width: 0%;
+}
 .box2-right li:nth-child(2n){
 	margin-left: 4%;
 	margin-bottom: 15px;
@@ -612,6 +615,13 @@ ul{
 		margin: 10px 0px 0px 20px;
 	}
 	.ka h4 {
-	    width: 290px;
+	    width: 220px;
+	    font-size: 15px;
+	}
+	.box2 {
+	    padding-bottom: 45px;
+	}
+	.box2-right li span {
+		display: block;
 	}
 }
