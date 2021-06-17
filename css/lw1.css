@@ -278,7 +278,7 @@ ul{
 	margin-bottom: 10px;
 }
 .ka h4{
-	font-size: 13px;
+	font-size: 1px;
 	line-height: 30px;
 	font-weight: normal;
 	color: #828282;
@@ -449,7 +449,7 @@ ul{
 	margin-left: 40px;
 	cursor: pointer;
 }
-@media  screen  and (max-width: 968px) {
+@media  screen  and (max-width: 1020px) {
 	.box6{
 		display: none;
 	}
@@ -479,7 +479,7 @@ ul{
 	.box1-cd{
 		position: fixed;
 		top: 0;
-		right: -1000px;
+		right: -1200px;
 		width: 100vw;
 		height: 100vh;
 		display: block;
@@ -557,7 +557,7 @@ ul{
     	height: 280px;
     }
     body{
-    	height: 3980px;
+    	height: 3550px;
     }
     .box5-con {
    	 	margin: 30px auto 0px;
@@ -575,5 +575,43 @@ ul{
 	.vx2{
 		 top: -47px;
 	    left: 43px;	 
+	}
+}
+@media  screen  and (max-width: 400px) {
+	.box1-con h1 {
+	    margin-left: -190px;
+	}
+	.box1-con h3 {
+	    margin-left: -183px;
+	    font-size: 15px;
+	}
+	.jj1 {
+	    margin: 25px 0px 20px 25px;
+	}
+	.jj2 {
+	    margin: 0px 0px 25px 25px;
+	}
+	.box2-right {	   
+	    left: 25px;
+	}
+	.box2-right li:nth-child(9) {
+	    margin-right: 10%;
+	}
+	.qq1, .vx1 {
+	    left: -16px;
+	}
+	.qiu {
+	    top: 3px;
+	    left: -110px;
+	    float: none; 
+	}
+	.line2 {	   
+	  display: none;	  	  
+	}
+	.ka{
+		margin: 10px 0px 0px 20px;
+	}
+	.ka h4 {
+	    width: 290px;
 	}
 }
